@@ -7,9 +7,9 @@ const day = Math.floor(diff / oneDay);
 const year = new Date().getFullYear()
 
 const bissextile = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ) ? true : false;
-const nomberOfDay = bissextile ? 366 : 355;
+const numberOfDay = bissextile ? 366 : 355;
 
-const pourcentDay = Math.floor((day / nomberOfDay) * 100);
+const pourcentDay = Math.floor((day / numberOfDay) * 100);
 
 const progressBar = document.getElementById("progressBar");
 
